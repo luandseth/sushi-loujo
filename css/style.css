@@ -1,5 +1,5 @@
 body { 
-    background-color: green;
+    background-color: black;
     color: white;
     margin: 0px;
 }
@@ -119,26 +119,92 @@ header {
 
 /* This code is for the main sec 
 and 
-specificaly for the image slider */
+specificaly for the carousel */
 
 #main-sec {
+    
     margin-right: 0px;
     margin-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 55px;
+    background-color: #ffffff;
+    height: 100vh;
 }
 
-.img-slider {
-    display: flex;
-    width: 100vw;
-    margin-bottom: 5px;
+.carousel {
     position: relative;
-   
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    background-color: lightpink;
+    padding: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left {
+    left: -40px;
+    transform: scaleX(-1);
     
 }
 
-.img-slider .slide {
-    z-index: 1;
-    width: 100vw;
-    height: 100%;
-    border: 5px solid black;
+.carousel_button--right {
+    right: -40px;
+    
+}
+.carousel_button img {
+    width: 12px;
 }
 
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    margin: 10px 12px;
+     
+}
+
+.carousel_indicator .current-slide {
+    background-color: orange;
+}
