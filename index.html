@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi Loujo - Mejor Sushi de Zona Sur</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <script src="./scripts/hamburger-menu.js"></script>
-    <script src="./scripts/slider-menu.js"></script>
 </head>
 <body>
     <main>
@@ -33,33 +31,32 @@
         </header>
         <section id="main-sec">
             <div class="carousel">
-                <button class="carousel_button carousel_button--left">
-                    <img src="./resources/img/left-arrow.svg" alt="Left arrow">
-                </button>
-                <div class="carousel_track-container">
-                    <ul class="carousel_track">
-                        <li class="carousel_slide">
-                            <img class="carousel_image" src="./resources/img/1.jpeg" alt="">
-                        </li>
-                        <li class="carousel_slide">
-                            <img class="carousel_image" src="./resources/img/3.jpeg" alt="">
-                        </li>
-                        <li class="carousel_slide">
-                            <img class="carousel_image" src="./resources/img/3.jpeg" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <button class="carousel_button carousel_button--right">
-                    <img src="./resources/img/left-arrow.svg" alt="Rigth arrow">
-                </button>
+                        <button class="carousel_button carousel_button--left is-hidden">
+                            <img src="./resources/img/left-arrow.svg" alt="Left arrow">
+                        </button>
+                        <div class="carousel_track-container">
+                            <ul class="carousel_track">
+                                <li class="carousel_slide current-slide">
+                                    <img class="carousel_image" src="./resources/img/1.jpeg" alt="">
+                                </li>
+                                <li class="carousel_slide">
+                                    <img class="carousel_image" src="./resources/img/3.jpeg" alt="">
+                                </li>
+                                <li class="carousel_slide">
+                                    <img class="carousel_image" src="./resources/img/3.jpeg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel_button carousel_button--right">
+                            <img src="./resources/img/left-arrow.svg" alt="Rigth arrow">
+                        </button>
 
-                <div class="carousel_nav">
-                    <button class="carousel_indicator current-slide"></button>
-                    <button class="carousel_indicator"></button>
-                    <button class="carousel_indicator"></button>
-                </div>
-
-            </article>
+                        <div class="carousel_nav">
+                            <button class="carousel_indicator current-slide"></button>
+                            <button class="carousel_indicator"></button>
+                            <button class="carousel_indicator"></button>
+                        </div>
+            </div>
         </section>
         <section id="prod-sec">
             <div style="background-color: blueviolet; height: 500px;"></div>
@@ -69,5 +66,8 @@
         </section>
         <footer></footer>
     </main>
+
+    <script src="./scripts/hamburger-menu.js"></script>
+    <script src="./scripts/carousel.js"></script>
 </body>
 </html>

@@ -125,16 +125,17 @@ specificaly for the carousel */
     
     margin-right: 0px;
     margin-left: 0px;
-    padding-top: 15px;
+    padding-top: 60px;
     padding-bottom: 55px;
     background-color: #ffffff;
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
 }
 
 .carousel {
     position: relative;
-    height: 100%;
-    width: 85%;
+    height: 80%;
+    width: 65%;
     margin: 0 auto;
 
 }
@@ -142,26 +143,36 @@ specificaly for the carousel */
 .carousel_image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
 }
 
 .carousel_track-container {
-    background-color: lightpink;
-    padding: 10px;
+    background: none;
     height: 100%;
+    width: 100%;
     position: relative;
+    overflow: hidden;
+
 }
 
 .carousel_track {
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 150ms ease-in-out;
 }
 
 .carousel_slide {
     position: absolute;
     top: 0;
     bottom: 0;
+    width: 100%;
+}
+
+.carousel_slide.current-slide {
     width: 100%;
 }
 
@@ -192,19 +203,24 @@ specificaly for the carousel */
 .carousel_nav {
     display: flex;
     justify-content: center;
-    
+    padding: 10px 0;
 }
 
 .carousel_indicator {
-    border: 0;
+    border: 1 transparent black;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: pink;
-    margin: 10px 12px;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin: 0 12px;
+    cursor: pointer;
      
 }
 
-.carousel_indicator .current-slide {
-    background-color: orange;
+.carousel_indicator.current-slide {
+    background-color: black;
+}
+
+.is-hidden {
+    display: none;
 }
