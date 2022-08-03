@@ -13,9 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./resources/img/icons8-sushi-100.png" type="image/x-icon">
+    
 </head>
 <body>
-    <main>
+    <main id="main">
         <header>
             <div id="menu-bar">
                 <div id="menu" onclick="onClickMenu()">
@@ -25,16 +27,16 @@
                 </div>
                 <nav>
                     <ul class="nav-li" id="nav">
-                        <li><a href="#main-sec">Inicio</a></li>
-                        <li><a href="#prod-sec">Productos</a></li>
-                        <li><a href="#delivery-sec">Delivery</a></li>
-                        <li><a href="https://wa.me/message/QMJKAUYKCGQOG1" target="_blank"><img src="resources/img/icons8-whatsapp.svg" alt="whatsapp icon"></a></li>
+                        <li><a href="#main" onclick="onClickCloseMenu()">Inicio</a></li>
+                        <li><a href="#prod-sec" onclick="onClickCloseMenu()">Productos</a></li>
+                        <li><a href="#delivery-sec" onclick="onClickCloseMenu()">Delivery</a></li>
+                        <li><a href="https://wa.me/message/QMJKAUYKCGQOG1" target="_blank" onclick="onClickCloseMenu()"><img src="resources/img/icons8-whatsapp.svg" alt="whatsapp icon" ></a></li>
                     </ul>
                 </nav>
             </div>
             <div class="menu-bg" id="menu-bg"></div>
             <div class="header-text">
-                <h1>Sushi Loujo</h1>
+                <h1><a id="header-text_title" href="#main">Sushi Loujo</a></h1>
             </div>
         </header>
         <section id="main-sec">
@@ -79,7 +81,7 @@
         <section id="prod-sec">
             <article class="prod-sec_container">
                 <div class="products">
-                    <img class="products_image" src="resources/img/roll.jpg" alt="roll">
+                    <img class="products_image" src="./resources/img/roll.jpg" alt="roll">
                     <div class="products_text">
                         <div class="products_text_content">
                         <h3>Rolls & Maki</h3>
@@ -96,7 +98,7 @@
                 </div>
 
                 <div class="products">
-                    <img class="products_image"  src="resources/img/hot-roll.jpg" alt="hot roll">
+                    <img class="products_image"  src="./resources/img/hot-roll.jpg" alt="hot roll">
                     <div class="products_text">
                         <div class="products_text_content">
                         <h3>Hot roll</h3>
@@ -112,7 +114,7 @@
                 </div>
 
                 <div class="products">
-                    <img class="products_image"  src="resources/img/maki-veggie.jpg" alt="maki veggie">
+                    <img class="products_image"  src="./resources/img/maki-veggie.jpg" alt="maki veggie">
                     <div class="products_text">
                         <div class="products_text_content">
                         <h3>Veggie Roll & Maki</h3>
@@ -125,7 +127,7 @@
                 </div>
 
                 <div class="products">
-                    <img class="products_image"  src="resources/img/harumaki.jpg" alt="harumaki">
+                    <img class="products_image"  src="./resources/img/harumaki.jpg" alt="harumaki">
                     <div class="products_text">
                         <div class="products_text_content">
                         <h3>Harumaki</h3>
@@ -137,7 +139,7 @@
                 </div>
 
                 <div class="products">
-                    <img class="products_image"  src="resources/img/niguiri.jpg" alt="niguiri">
+                    <img class="products_image"  src="./resources/img/niguiri.jpg" alt="niguiri">
                     <div class="products_text">
                         <div class="products_text_content">
                         <h3>Niguiris & Sashimis</h3>
@@ -146,7 +148,7 @@
                 </div>
 
                 <div class="products">
-                    <img class="products_image"  src="resources/img/gyoza.jpg" alt="gyoza">
+                    <img class="products_image"  src="./resources/img/gyoza.jpg" alt="gyoza">
                     <div class="products_text">
                         <div class="products_text_content">
                         <h3>Gyozas</h3>

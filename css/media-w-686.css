@@ -19,7 +19,7 @@ specificaly for the carousel */
     background-color: #ffffff;
     height: 73vh;
     width: 100%;
-    background-image: url(https://i.postimg.cc/44V1366z/japon-bg.jpg);
+    background-image: url(/resources/img/japon-bg.jpg);
     background-position-x: center;
     background-size: cover;
     opacity: 0.8;
